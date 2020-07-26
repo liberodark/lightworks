@@ -31,7 +31,6 @@ package() {
     msg2 "Copying copyright file and creating a license dir"
     install -Dm644 "$pkgdir"/usr/share/doc/lightworks/copyright \
     "$pkgdir"/usr/share/licenses/lightworks/copyright
-    #ln -sr "$pkgdir"/usr/share/licenses/lightworks "$pkgdir"/usr/share/licenses/$pkgname
 
     msg2 "Changing some needed permissions"
     chmod a+rw "$pkgdir"/usr/share/lightworks/Preferences
