@@ -2,7 +2,8 @@
 
 pkgname=lightworks
 pkgver=2020.1
-pkgrel=122068
+pkgbuild=r122068
+pkgrel=1
 pkgdesc="Lightworks version 2020"
 arch=('x86_64')
 options=('!strip')
@@ -12,7 +13,7 @@ depends=('cairo' 'gdk-pixbuf2' 'glib2' 'libjpeg-turbo' 'pango' 'curl' 'gtk3' 'op
 optdepends=('nvidia-utils: only for nVidia users' 'libc++: only for BlackMagic RAW support (BRAW)' 'libc++abi: only for BlackMagic RAW support (BRAW)')
 conflicts=('lightworks' 'lwks' 'lwks-beta')
 source=(
-    "https://cdn.lwks.com/releases/$pkgname-$pkgver-r$pkgrel-amd64.deb"
+    "https://cdn.lwks.com/releases/$pkgname-$pkgver-$pkgbuild-amd64.deb"
     )
 
 sha256sums=(
