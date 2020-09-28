@@ -12,17 +12,13 @@ license=('custom')
 depends=('cairo' 'gdk-pixbuf2' 'glib2' 'libjpeg-turbo' 'pango' 'curl' 'gtk3' 'openssl' 'libgl' 'libtiff' 'libutil-linux' 'ffmpeg' 'glu' 'libedit' 'nvidia-cg-toolkit' 'openssl-1.0')
 optdepends=('nvidia-utils: only for nVidia users' 'libc++: only for BlackMagic RAW support (BRAW)' 'libc++abi: only for BlackMagic RAW support (BRAW)')
 conflicts=('lightworks' 'lwks' 'lwks-beta')
-source=(
-    "https://cdn.lwks.com/releases/$pkgname-$pkgver-$pkgbuild-amd64.deb"
-    )
+source=("https://cdn.lwks.com/releases/$pkgver/lightworks_2020.1.1_r124942.deb")
 
-sha256sums=(
-    'e4da98e4439b45220f37ec748d829e72bc8580f6efa1384c882e4fbdb69a7f81'
-    )
+sha256sums=('e4da98e4439b45220f37ec748d829e72bc8580f6efa1384c882e4fbdb69a7f81')
 
 package() {
     msg2 "Extracting data.tar.xz"
-    tar -zxf data.tar.xz -C "$pkgdir"
+    tar -xvf data.tar.xz -C "$pkgdir"
 
     msg2 "Moving udev folder from /lib to /usr/lib"
     mv "$pkgdir"/lib/udev "$pkgdir"/usr/lib
