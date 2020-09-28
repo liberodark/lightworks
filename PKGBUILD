@@ -1,8 +1,8 @@
 # Maintainer: liberodark
 
 pkgname=lightworks
-pkgver=2020.1
-pkgbuild=r122068
+pkgver=2020.1.1
+pkgbuild=r124942
 pkgrel=1
 pkgdesc="Lightworks version 2020"
 arch=('x86_64')
@@ -17,7 +17,7 @@ source=(
     )
 
 sha256sums=(
-    '23ed5b617628ac278cc5b2f0f799f53368e3b00203c55ddc65e25be3e9f14fbf'
+    'e4da98e4439b45220f37ec748d829e72bc8580f6efa1384c882e4fbdb69a7f81'
     )
 
 package() {
